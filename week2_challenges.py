@@ -39,3 +39,28 @@ user_info['Favorite Color'] = input("Enter your favorite color: ")
 print("\n Person's Information:")
 for key, value in user_info.items():
     print(f"{key}: {value}")
+print("\n")
+    
+    
+##### CHALLENGE 4 #####
+# Write a program that accepts user input to create two sets of integers. 
+# Then, create a new set that contains only the elements that are common to both sets.
+
+# Accept user input to create the first set of integers
+input_str = input("Enter integers separated by spaces for the first set: ")
+set1 = set(map(int, input_str.split()))
+
+# Accept user input to create the second set of integers
+input_str = input("Enter integers separated by spaces for the second set: ")
+set2 = set(map(int, input_str.split()))
+print("Intersection:", set1 & set2) 
+print("\n")
+
+
+##### CHALLENGE 5 #####
+# Create a program that stores a list of words. 
+# Then, use list comprehension to create a new list that contains only the words that have an odd number of characters
+
+words_list = ["Hello", "User", "Welcome", "To", "Code"]
+odd = [word for word in words_list if len(word) % 2 != 0]
+print("Words with odd number of characters:", odd)
